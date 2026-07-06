@@ -1,0 +1,11 @@
+References
+
+Cachola, I., Lo, K., Cohan, A., & Weld, D. S. (2020). SciTLDR: Extreme summarization of scientific documents. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) (pp. 5974–5989). Association for Computational Linguistics. https://doi.org/10.18653/v1/2020.emnlp-main.484
+
+Chung, H. W., Hou, L., Longpre, S., Zoph, B., Tay, Y., Fedus, W., Li, Y., Wang, X., Dehghani, M., Brahma, S., Webson, A., Gu, S. S., Dai, Z., Suzgun, M., Chen, X., Chowdhery, A., Narang, S., Mishra, S., Yu, A., ... Le, Q. V. (2024). Scaling instruction-finetuned language models. Journal of Machine Learning Research, 25(70), 1–53. https://www.jmlr.org/papers/v25/23-0870.html
+
+Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., Stoyanov, V., & Zettlemoyer, L. (2020). BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (pp. 7871–7880). Association for Computational Linguistics. https://doi.org/10.18653/v1/2020.acl-main.703
+
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of Machine Learning Research, 21(140), 1–67. https://www.jmlr.org/papers/v21/20-074.html
+
+Zhang, J., Zhao, Y., Saleh, M., & Liu, P. J. (2020). PEGASUS: Pre-training with extracted gap-sentences for abstractive summarization. In Proceedings of the 37th International Conference on Machine Learning (ICML) (pp. 11328–11339). https://proceedings.mlr.press/v119/zhang20ae.html
