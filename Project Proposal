@@ -1,0 +1,85 @@
+# IE7500 – Applied Natural Language Processing
+
+# Scientific Text Translation Using Retrieval-Augmented Generation (RAG)
+
+## 1. Research and Selection of Methods
+
+### Define Objectives
+
+The objective of this project is to develop a Retrieval-Augmented Generation (RAG) system that translates scientific articles and literature into three different communication styles: Caveman, Gen-Z, and Conversational. Rather than summarizing an entire paper directly, the system retrieves the most relevant scientific passages before generating an easy-to-understand explanation while preserving the original scientific meaning.
+
+### Literature Review
+
+Review recent research on Retrieval-Augmented Generation (RAG), semantic search, transformer-based language models, and embedding models. The literature review will focus on retrieval techniques, vector databases, prompt engineering, and scientific text simplification.
+
+### Benchmarking
+
+Several embedding models will be evaluated, including BAAI BGE and Sentence Transformers, to determine which model retrieves the most relevant scientific information. Different chunk sizes and retrieval settings will also be compared to improve retrieval quality before generation.
+
+### Preliminary Experiments
+
+Conduct small-scale experiments using a subset of the SciTLDR dataset to validate data preprocessing, document chunking, embedding generation, vector indexing, and semantic retrieval. Retrieval quality will be verified before integrating the language generation component.
+
+---
+
+# 2. Model Implementation
+
+### Framework Selection
+
+The project will be implemented using Python, Pandas, NumPy, Hugging Face Transformers, Sentence Transformers, Scikit-learn, and PyTorch. These libraries provide efficient tools for preprocessing, embedding generation, semantic retrieval, and natural language generation.
+
+### Dataset Preparation
+
+Load the SciTLDR training, development, and testing datasets from JSONL files. Convert sentence lists into complete paragraphs, remove incomplete records, split each scientific document into overlapping chunks, and generate dense vector embeddings for each chunk. These embeddings will be stored in a searchable vector index to support semantic retrieval.
+
+### Model Development
+
+Develop the project using a modular RAG pipeline consisting of:
+
+* Data preprocessing
+* Document chunking
+* Embedding generation
+* Vector indexing
+* Semantic retrieval
+* Prompt engineering
+* Response generation
+
+This modular design improves readability, debugging, and future expansion.
+
+### Retrieval-Augmented Generation Pipeline
+
+When a user submits a scientific question, the system will:
+
+1. Convert the question into an embedding.
+2. Retrieve the most semantically similar scientific chunks using cosine similarity.
+3. Combine the retrieved chunks into a contextual prompt.
+4. Rewrite the retrieved scientific information into one of three communication styles:
+
+   * Caveman
+   * Gen-Z
+   * Conversational
+
+The retrieved context helps reduce hallucinations by grounding the generated response in real scientific literature.
+
+### Evaluation and Metrics
+
+The system will be evaluated using both retrieval and generation metrics.
+
+Retrieval quality will be assessed by reviewing similarity scores and manually verifying that the retrieved chunks are relevant to the user's question.
+
+Generation quality will be evaluated based on:
+
+* Scientific accuracy
+* Readability
+* Style consistency
+* Human evaluation across the three communication styles
+
+Additional experiments will compare different chunk sizes, retrieval parameters, and embedding models to determine their impact on overall system performance.
+
+---
+
+# Expected Outcomes
+
+The completed system will function as an interactive scientific communication assistant capable of retrieving relevant scientific literature and translating it into language that is easier for different audiences to understand.
+
+The project demonstrates the complete Retrieval-Augmented Generation workflow, including semantic search, document retrieval, prompt engineering, and controllable text generation. By supporting multiple communication styles while preserving scientific accuracy, the system highlights how modern NLP techniques can improve the accessibility of complex research without sacrificing factual content.
